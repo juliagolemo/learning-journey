@@ -78,7 +78,7 @@
 
 .circle-description {
   position: absolute;
-  bottom: -70px;
+  top: 110%; /* Zamiast bottom, tooltip pojawia się poniżej kółka */
   left: 50%;
   transform: translateX(-50%);
   width: 160px;
@@ -129,7 +129,7 @@
   .circle-description {
     width: 120px;
     font-size: 10px;
-    bottom: -50px;
+    top: 110%;
   }
 
   .circle-center {

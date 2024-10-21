@@ -1,0 +1,28 @@
+# Ignorowanie node_modules (zostanie odtworzone podczas budowy obrazu)
+node_modules
+
+# Ignorowanie plików build (ponieważ zostaną wygenerowane podczas budowy obrazu)
+build
+
+# Ignorowanie plików konfiguracyjnych
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignorowanie plików logów
+npm-debug.log
+yarn-error.log
+*.log
+
+# Ignorowanie plików systemowych
+.DS_Store
+*.swp
+*.swo
+
+# Ignorowanie Dockerfile i .dockerignore, bo nie są potrzebne w obrazie
+Dockerfile
+.dockerignore
+
+src.zip

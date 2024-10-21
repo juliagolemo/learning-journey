@@ -22,8 +22,11 @@ FROM nginx:alpine
 # 8. Kopiujemy zbudowaną aplikację do folderu, z którego Nginx będzie serwował pliki
 COPY --from=build /app/build /usr/share/nginx/html
 
-# 9. Otwieramy port 80 dla HTTP
+# 9. Kopiujemy niestandardowy plik konfiguracyjny Nginx
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# 10. Otwieramy port 80 dla HTTP
 EXPOSE 80
 
-# 10. Uruchamiamy Nginx (domyślnie Nginx uruchamia się automatycznie po uruchomieniu kontenera)
+# 11. Uruchamiamy Nginx (domyślnie Nginx uruchamia się automatycznie po uruchomieniu kontenera)
 CMD ["nginx", "-g", "daemon off;"]

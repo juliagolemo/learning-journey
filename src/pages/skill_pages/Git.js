@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import './Classes.css'; 
 
 const cards = [
-  { id: 'example', title: 'Git ch. 1', date: '2024-10-01', image: '/images/python.jpg'},
-  { id: 'example', title: 'Git ch. 1', date: '2024-10-01', image: '/images/python.jpg'},
+  { id: 'example', title: 'Git ch. 1', date: '2024-10-01', image: '/images/git_github.png'},
+  { id: 'example', title: 'Git ch. 1', date: '2024-10-01', image: '/images/git_github.png'},
 ];
 
 export default function Git() {

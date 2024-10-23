@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import './Classes.css'; 
 
 const cards = [
-  { id: 'example', title: 'Python ch. 1', date: '2024-10-01', image: '/images/excel_1.jpg'},
-  { id: 'example2', title: 'Example ch. 2', date: '2024-10-02', image: '/images/excel_2.jpg' },
+  { id: 'example', title: 'Excel ch. 1', date: '2024-10-01', image: '/images/excel_1.jpg'},
 ];
 
 export default function Excel() {

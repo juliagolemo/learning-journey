@@ -4,9 +4,6 @@ import './Classes.css';
 
 const cards = [
   { id: 'example', title: 'Power Automate ch. 1', date: '2024-10-01', image: '/images/pa.png'},
-  { id: 'example2', title: 'Power Automate ch. 2', date: '2024-10-02', image: '/images/pa.png' },
-  { id: 'excel_pivot_table', title: 'Power Automate ch. 3', date: '2024-10-03', image: '/images/pa.png' },
-  { id: 'example', title: 'Power Automate ch. 4', date: '2024-10-01', image: '/images/pa.png' },
 ];
 
 export default function PowerAutomate() {

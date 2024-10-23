@@ -4,8 +4,6 @@ import './Classes.css';
 
 const cards = [
   { id: 'example', title: 'Gofer Szymix ch. 1', date: '2024-10-01', image: '/images/gofer_zywy.jpg' },
-  { id: 'example2', title: 'Gofer Szymix ch. 2', date: '2024-10-02', image: '/images/gofer_zywy.jpg' },
-  { id: 'excel_pivot_table', title: 'Gofer Szymix 3', date: '2024-10-03', image: '/images/gofer_zywy.jpg' },
 ];
 
 export default function GoLang() {

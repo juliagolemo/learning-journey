@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import './Classes.css'; 
 
 const cards = [
-  { id: 'example', title: 'Azure wprowadzenie ch. 1', date: '2024-10-01', image: '/images/microsoft-azure.png'},
-  { id: 'example2', title: 'Azure Blob ch. 2', date: '2024-10-02', image: '/images/Blob-Storage-In-Azure.png' },
+  { id: 'azure_blob', title: 'Azure Blob ch. 2', date: '2024-10-02', image: '/images/Blob-Storage-In-Azure.png' },
 ];
 
 export default function Azure() {

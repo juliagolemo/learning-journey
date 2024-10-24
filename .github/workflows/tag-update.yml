@@ -1,60 +1,67 @@
-name: Build, Tag and Push Docker Image
+name: Tag and Build Docker Image on Merge to Main
 
 on:
   push:
     branches:
-      - main  # Workflow działa, gdy kod jest wypychany na główną gałąź
+      - main
+
+permissions:
+  contents: write
+  packages: write  # Potrzebne do pushowania obrazów Dockera
 
 jobs:
-  tag_version:
+  tagging_and_docker:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0  # Pobiera pełną historię commitów, aby móc operować na tagach
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Get current version tag
-      id: get_version
-      run: |
-        # Pobierz ostatni tag z Git, jeśli nie ma żadnego, ustaw wersję na 0.0.0
-        last_tag=$(git describe --tags `git rev-list --tags --max-count=1` || echo "0.0.0")
-        echo "Last tag: $last_tag"
-        # Podziel wersję na Major, Minor, Patch
-        IFS='.' read -ra VERSION <<< "$last_tag"
-        major="${VERSION[0]}"
-        minor="${VERSION[1]}"
-        patch="${VERSION[2]}"
-        echo "Current version: $major.$minor.$patch"
-        # Zwiększ wersję Minor i resetuj Patch
-        new_minor=$((minor + 1))
-        new_tag="$major.$new_minor.0"
-        echo "New tag: $new_tag"
-        echo "::set-output name=NEW_TAG::$new_tag"
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
 
-    - name: Create new Git tag
-      run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        git tag ${{ steps.get_version.outputs.NEW_TAG }}  # Tworzenie nowego tagu
-        git push origin ${{ steps.get_version.outputs.NEW_TAG }}  # Wypchnięcie nowego tagu do repozytorium
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Log in to DockerHub
-      uses: docker/login-action@v2
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}  # Zmienna z GitHub Secrets
-        password: ${{ secrets.DOCKER_PASSWORD }}  # Zmienna z GitHub Secrets
+      - name: Get latest tag
+        id: get_latest_tag
+        run: |
+          git fetch --tags
+          TAG=$(git describe --tags `git rev-list --tags --max-count=1` 2>/dev/null || echo "")
+          echo "Latest tag: $TAG"
+          echo "LATEST_TAG=$TAG" >> $GITHUB_ENV
 
-    - name: Build Docker image
-      run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/julia-golemo-learning-journey:${{ steps.get_version.outputs.NEW_TAG }} .
-        docker tag ${{ secrets.DOCKER_USERNAME }}/julia-golemo-learning-journey:${{ steps.get_version.outputs.NEW_TAG }} ${{ secrets.DOCKER_USERNAME }}/julia-golemo-learning-journey:latest
+      - name: Calculate new tag
+        id: calculate_new_tag
+        run: |
+          LATEST_TAG=${{ env.LATEST_TAG }}
+          echo "Current tag: $LATEST_TAG"
+          if [ -z "$LATEST_TAG" ]; then
+            NEW_TAG="v1.0.0"
+          else
+            NEW_TAG=$(echo $LATEST_TAG | awk -F. -v OFS=. '{$NF += 1 ; print}')
+          fi
+          echo "New tag: $NEW_TAG"
+          echo "NEW_TAG=$NEW_TAG" >> $GITHUB_ENV
 
-    - name: Push Docker image with version tag
-      run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/julia-golemo-learning-journey:${{ steps.get_version.outputs.NEW_TAG }}
+      - name: Create new tag
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git tag ${{ env.NEW_TAG }}
+          git push origin ${{ env.NEW_TAG }}
 
-    - name: Push Docker image with 'latest' tag
-      run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/julia-golemo-learning-journey:latest
+      - name: Build Docker image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/julia-golemo-learning-journey:${{ env.NEW_TAG }} .
+          docker tag ${{ secrets.DOCKER_USERNAME }}/julia-golemo-learning-journey:${{ env.NEW_TAG }} ${{ secrets.DOCKER_USERNAME }}/julia-golemo-learning-journey:latest
+
+      - name: Push Docker image with version tag
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/julia-golemo-learning-journey:${{ env.NEW_TAG }}
+
+      - name: Push Docker image with 'latest' tag
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/julia-golemo-learning-journey:latest

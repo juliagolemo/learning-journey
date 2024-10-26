@@ -1,7 +1,7 @@
 # Azure
-```
+
 The Azure platform offers four levels of management: management groups, subscriptions, resource groups, and resources.
-```
+
 ![Alt text for image](/images/markdown/scope-levels.png)
 
 ## Management groups 

@@ -1,26 +1,60 @@
-import React, { useState, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom'; // Do pobrania parametrów z URL
+import ReactMarkdown from 'react-markdown'; // Do renderowania Markdown
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter'; // Do kolorowania składni
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-const MarkdownPage = () => {
-  const { markdownName } = useParams();
-  const [content, setContent] = useState('');
+// Importujemy języki programowania do kolorowania składni
+import javascript from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript';
+import excel from 'react-syntax-highlighter/dist/esm/languages/hljs/excel';
+// Możesz dodać inne języki, jeśli potrzebujesz
+// import python from 'react-syntax-highlighter/dist/esm/languages/hljs/python';
 
-  useEffect(() => {
-    import(`./markdown/${markdownName}.md`)
-      .then(res => {
-        fetch(res.default)
-          .then(response => response.text())
-          .then(text => setContent(text));
-      })
-      .catch(err => setContent('# Markdown file not found'));
-  }, [markdownName]);
+// Rejestrujemy języki w SyntaxHighlighter
+SyntaxHighlighter.registerLanguage('javascript', javascript);
+SyntaxHighlighter.registerLanguage('excel', excel);
+// SyntaxHighlighter.registerLanguage('python', python);
 
-  return (
-    <div>
-      <ReactMarkdown>{content}</ReactMarkdown>
-    </div>
-  );
-};
+function MarkdownPage() {
+    // Pobieramy parametr markdownName z URL
+    const { markdownName } = useParams();
+    const [content, setContent] = useState('');
+
+    useEffect(() => {
+        // Pobieramy zawartość pliku Markdown
+        fetch(`/markdown/${markdownName}.md`)
+            .then(res => res.text())
+            .then(setContent)
+            .catch(console.error);
+    }, [markdownName]);
+
+    return (
+        <div>
+            <ReactMarkdown
+                children={content}
+                components={{
+                    // Definiujemy komponent do renderowania kodu z kolorowaniem składni
+                    code({node, inline, className, children, ...props}) {
+                        const match = /language-(\w+)/.exec(className || '')
+                        return !inline && match ? (
+                            <SyntaxHighlighter
+                                style={docco}
+                                language={match[1]}
+                                PreTag="div"
+                                {...props}
+                            >
+                                {String(children).replace(/\n$/, '')}
+                            </SyntaxHighlighter>
+                        ) : (
+                            <code className={className} {...props}>
+                                {children}
+                            </code>
+                        )
+                    }
+                }}
+            />
+        </div>
+    );
+}
 
 export default MarkdownPage;

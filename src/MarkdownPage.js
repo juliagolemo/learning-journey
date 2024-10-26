@@ -7,13 +7,12 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 // Importujemy języki programowania do kolorowania składni
 import javascript from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript';
 import excel from 'react-syntax-highlighter/dist/esm/languages/hljs/excel';
-// Możesz dodać inne języki, jeśli potrzebujesz
-// import python from 'react-syntax-highlighter/dist/esm/languages/hljs/python';
+import python from 'react-syntax-highlighter/dist/esm/languages/hljs/python';
 
 // Rejestrujemy języki w SyntaxHighlighter
 SyntaxHighlighter.registerLanguage('javascript', javascript);
 SyntaxHighlighter.registerLanguage('excel', excel);
-// SyntaxHighlighter.registerLanguage('python', python);
+SyntaxHighlighter.registerLanguage('python', python);
 
 function MarkdownPage() {
     // Pobieramy parametr markdownName z URL

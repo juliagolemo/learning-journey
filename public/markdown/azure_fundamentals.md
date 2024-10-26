@@ -2,7 +2,7 @@
 ```
 The Azure platform offers four levels of management: management groups, subscriptions, resource groups, and resources.
 ```
-![Alt text for image](./images/scope-levels.png)
+![Alt text for image](/images/markdown/scope-levels.png)
 
 ## Management groups 
 Management groups simplify managing access, policies, and compliance for multiple subscriptions. All subscriptions within a management group automatically inherit the conditions applied to the management group.

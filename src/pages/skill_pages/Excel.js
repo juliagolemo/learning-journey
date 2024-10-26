@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import './Classes.css'; 
 
 const cards = [
-  { id: 'example', title: 'Excel ch. 1', date: '2024-10-01', image: '/images/excel_1.jpg'},
+  { id: 'example', title: 'Excel', date: '2024-10-01', image: '/images/excel_1.jpg'},
+  { id: 'excel_if', title: 'Excel IF function & conditions', date: '2024-10-01', image: '/images/excel_1.jpg'},
+
 ];
 
 export default function Excel() {

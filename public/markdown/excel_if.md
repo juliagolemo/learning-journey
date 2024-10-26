@@ -14,6 +14,10 @@ For example, if you want to check if a number in cell A1 is greater than 10, the
 ```
 This will return “Yes” if the condition is true (A1 > 10) and “No” if it’s false.
 
+Example with odd and even numbers:
+
+![Even](/images/markdown/if_odd_even.png)
+
 ### 2) COUNTIF and SUMIF
 COUNTIF is a function that counts the number of cells in a range that meet a specific condition. 
 For example, `=COUNTIF(A1:A10, ">5")` counts cells in the range A1:A10 that have values greater than 5.
@@ -56,3 +60,5 @@ Examples:
 // If A6 = 5, the result will be "Not zero"
 // If A6 = 0, the result will be "Is zero"
 ```
+
+

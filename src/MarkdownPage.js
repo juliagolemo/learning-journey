@@ -8,11 +8,13 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import javascript from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript';
 import excel from 'react-syntax-highlighter/dist/esm/languages/hljs/excel';
 import python from 'react-syntax-highlighter/dist/esm/languages/hljs/python';
+import go from 'react-syntax-highlighter/dist/esm/languages/hljs/go';
 
 // Rejestrujemy języki w SyntaxHighlighter
 SyntaxHighlighter.registerLanguage('javascript', javascript);
 SyntaxHighlighter.registerLanguage('excel', excel);
 SyntaxHighlighter.registerLanguage('python', python);
+SyntaxHighlighter.registerLanguage('go', go);
 
 function MarkdownPage() {
     // Pobieramy parametr markdownName z URL

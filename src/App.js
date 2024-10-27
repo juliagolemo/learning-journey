@@ -1,41 +1,10 @@
-// import Navbar from "./Navbar"
-// import Sidebar from "./SiteBar"
-// import Pricing from "./pages/Pricing"
-// import Home from "./pages/Home"
-// import About from "./pages/About"
-// import { Route, Routes } from "react-router-dom"
-// import Classes from "./pages/Classes"
-// import MarkdownPage from './MarkdownPage';
-// import Technologies from './pages/Technologies';
-
-// function App() {
-//   return (
-//     <>
-//       <Navbar />
-//       <div className="container">
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/classes" element={<Classes />} />
-//           <Route path="/sth" element={<Home />} />
-//           <Route path="/pricing" element={<Pricing />} />
-//           <Route path="/about" element={<About />} />
-//           {/* Now we handle markdown files with a dynamic route */}
-//           <Route path="/classes/:markdownName" element={<MarkdownPage />} /> {/* Dynamic route */}
-//           <Route path="/technologies" element={<Technologies />} /> {/* Technologies page */}
-//         </Routes>
-//       </div>
-//     </>
-//   )
-// }
-
-// export default App
-
-
 import React from "react";
-import Sidebar from "./SiteBar"; // Upewnij się, że ścieżka jest poprawna
+import Sidebar from "./SiteBar";
 import Pricing from "./pages/Pricing";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import HomeRedirect from "./pages/HomeRedirect";
+import NavigationTracker from './pages/NavigationTracker';
 import { Route, Routes } from "react-router-dom";
 import Classes from "./pages/Classes";
 import MarkdownPage from "./MarkdownPage";
@@ -52,13 +21,14 @@ function App() {
   return (
     <>
       <Sidebar />
+      <NavigationTracker />
       <div className="home-section">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/classes" element={<Classes />} />
-          <Route path="/sth" element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
+          <Route path="/home/:company" element={<HomeRedirect />} />
           {/* Dynamic route for markdown files */}
           <Route path="/classes/:markdownName" element={<MarkdownPage />} />
           <Route path="/technologies" element={<Technologies />} />

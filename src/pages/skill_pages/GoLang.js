@@ -4,6 +4,7 @@ import './Classes.css';
 
 const cards = [
   { id: 'golang_var', title: ' Variable: What is variable? Types (string, int, bool, float32,float64)', date: '2024-10-01', image: '/images/0_SoqCeEz9EctJBXKw.png' },
+  { id: 'golang_func', title: ' Functions', date: '2024-10-01', image: '/images/golangheader.png' },
 ];
 
 export default function GoLang() {

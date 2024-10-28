@@ -7,37 +7,37 @@ const technologies = [
     name: 'Excel',
     image: '/images/Excel.png',
     path: 'excel',
-    description: 'Microsoft Excel to program do arkuszy kalkulacyjnych.',
+    description: 'Microsoft Excel is a spreadsheet program.',
   },
   {
     name: 'Azure',
     image: '/images/Azure.png',
     path: 'azure',
-    description: 'Microsoft Azure to usługa chmury obliczeniowej.',
+    description: 'Microsoft Azure is a cloud computing service.',
   },
   {
     name: 'GoLang',
     image: '/images/gofer.png',
     path: 'golang',
-    description: 'GoLang to język programowania stworzony przez Google.',
+    description: 'GoLang is a programming language created by Google.',
   },
   {
     name: 'Git',
     image: '/images/git.png',
     path: 'git',
-    description: 'Git to rozproszony system kontroli wersji.',
+    description: 'Git is a distributed version control system.',
   },
   {
     name: 'Power Automate',
     image: '/images/power_automate.png',
     path: 'power-automate',
-    description: 'Power Automate to narzędzie do automatyzacji procesów biznesowych od Microsoft.',
+    description: 'Power Automate is a business process automation tool from Microsoft.',
   },
   {
     name: 'SAP HCM',
     image: '/images/sap_success_factors.png',
     path: 'sap',
-    description: 'SAP HCM to moduł SAP do zarządzania zasobami ludzkimi (Human Capital Management).',
+    description: 'SAP HCM is an SAP module for Human Capital Management.',
   }
 ];
 

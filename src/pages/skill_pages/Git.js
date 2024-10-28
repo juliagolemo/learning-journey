@@ -4,6 +4,7 @@ import './Classes.css';
 
 const cards = [
   { id: 'git_fundamentals', title: 'Git Fundamentals', date: '2024-10-01', image: '/images/git_git.png'},
+  { id: 'git_mr_and_cr', title: 'Git Merge Requests and Code Reviews', date: '2024-10-28', image: '/images/git_github.png'},
 ];
 
 export default function Git() {

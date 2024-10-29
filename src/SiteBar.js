@@ -45,7 +45,7 @@ const Sidebar = () => {
           <span className="tooltip">User</span>
         </li>
         <li>
-          <Link to="/classes">
+          <Link to="/tutorial">
             <i className='bx bxs-book-open'></i>
             <span className="links_name">Tutorial</span>
           </Link>

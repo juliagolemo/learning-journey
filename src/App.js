@@ -6,7 +6,7 @@ import About from "./pages/About";
 import HomeRedirect from "./pages/HomeRedirect";
 import NavigationTracker from './pages/NavigationTracker';
 import { Route, Routes } from "react-router-dom";
-import Classes from "./pages/Classes";
+import Tutorial from "./pages/Tutorial";
 import MarkdownPage from "./MarkdownPage";
 import Technologies from "./pages/Technologies";
 import './SiteBar.css';
@@ -25,7 +25,7 @@ function App() {
       <div className="home-section">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/classes" element={<Classes />} />
+          <Route path="/tutorial" element={<Tutorial />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
           <Route path="/home/:company" element={<HomeRedirect />} />

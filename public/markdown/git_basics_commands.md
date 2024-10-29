@@ -1,6 +1,6 @@
 # Basic Git commands
 Here’s an overview of some basic Git commands, which are essential for version control and managing code changes:
-
+![Alt text for image](/images/markdown/git_better.png)
 1.	**git init**: Initializes a new Git repository in your project directory. This command creates a hidden .git folder where Git will track changes.
 ```git
 git init

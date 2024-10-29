@@ -1,5 +1,7 @@
 # Git Merge Requests and Code Reviews
 
+![Alt text for image](/images/markdown/Branching.png)
+
 In collaborative software development, managing code changes and ensuring code quality are critical. **Merge Requests** (also known as **Pull Requests** in some systems) and **Code Reviews** are two essential practices in Git that facilitate this process. They enable teams to review and discuss code changes before integrating them into the main codebase.
 What is a Merge Request?
 

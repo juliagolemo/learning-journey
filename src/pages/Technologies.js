@@ -28,10 +28,10 @@ const technologies = [
     description: 'Git is a distributed version control system.',
   },
   {
-    name: 'Power Automate',
-    image: '/images/power_automate.png',
-    path: 'power-automate',
-    description: 'Power Automate is a business process automation tool from Microsoft.',
+    name: 'German',
+    image: '/images/flag.png',
+    path: 'german',
+    description: 'My progress in learning German.',
   },
   {
     name: 'SAP HCM',

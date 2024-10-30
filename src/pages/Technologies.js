@@ -29,9 +29,9 @@ const technologies = [
   },
   {
     name: 'German',
-    image: '/images/power_automate.png',
+    image: '/images/flag.png',
     path: 'german',
-    description: 'Power Automate is a business process automation tool from Microsoft.',
+    description: 'My progress in learning German.',
   },
   {
     name: 'SAP HCM',

@@ -14,7 +14,7 @@ import Excel from "./pages/skill_pages/Excel";
 import Azure from "./pages/skill_pages/Azure";
 import Git from "./pages/skill_pages/Git";
 import GoLang from "./pages/skill_pages/GoLang";
-import PowerAutomate from "./pages/skill_pages/PowerAutomate";
+import German from "./pages/skill_pages/German";
 import SAP from "./pages/skill_pages/SAP";
 
 function App() {

@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import './Classes.css'; 
 
 const cards = [
-  { id: 'example', title: 'Power Automate ch. 1', date: '2024-10-01', image: '/images/pa.png'},
+  { id: 'example', title: 'German', date: '2024-10-01', image: '/images/german.jpg'},
 ];
 
-export default function PowerAutomate() {
+export default function German() {
   return (
     <div className="cards-container">
       {cards.map(card => (

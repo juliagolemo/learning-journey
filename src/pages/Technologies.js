@@ -28,9 +28,9 @@ const technologies = [
     description: 'Git is a distributed version control system.',
   },
   {
-    name: 'Power Automate',
+    name: 'German',
     image: '/images/power_automate.png',
-    path: 'power-automate',
+    path: 'german',
     description: 'Power Automate is a business process automation tool from Microsoft.',
   },
   {

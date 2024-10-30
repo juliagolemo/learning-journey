@@ -1,48 +1,61 @@
-import React from "react";
-import Sidebar from "./SiteBar";
-import Pricing from "./pages/Pricing";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import HomeRedirect from "./pages/HomeRedirect";
-import NavigationTracker from './pages/NavigationTracker';
-import { Route, Routes } from "react-router-dom";
-import Tutorial from "./pages/Tutorial";
-import MarkdownPage from "./MarkdownPage";
-import Technologies from "./pages/Technologies";
-import './SiteBar.css';
-import Excel from "./pages/skill_pages/Excel";
-import Azure from "./pages/skill_pages/Azure";
-import Git from "./pages/skill_pages/Git";
-import GoLang from "./pages/skill_pages/GoLang";
-import PowerAutomate from "./pages/skill_pages/PowerAutomate";
-import SAP from "./pages/skill_pages/SAP";
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom'; // Do pobrania parametrów z URL
+import ReactMarkdown from 'react-markdown'; // Do renderowania Markdown
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter'; // Do kolorowania składni
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-function App() {
-  return (
-    <>
-      <Sidebar />
-      <NavigationTracker />
-      <div className="home-section">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/tutorial" element={<Tutorial />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/home/:company" element={<HomeRedirect />} />
-          {/* Dynamic route for markdown files */}
-          <Route path="/classes/:markdownName" element={<MarkdownPage />} />
-          <Route path="/technologies" element={<Technologies />} />
-          
-          <Route path="/technologies/excel" element={<Excel />} />
-          <Route path="/technologies/azure" element={<Azure />} />
-          <Route path="/technologies/git" element={<Git />} />
-          <Route path="/technologies/golang" element={<GoLang />} />
-          <Route path="/technologies/power-automate" element={<PowerAutomate />} />
-          <Route path="/technologies/sap" element={<SAP />} />
-        </Routes>
-      </div>
-    </>
-  );
+// Importujemy języki programowania do kolorowania składni
+import javascript from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript';
+import excel from 'react-syntax-highlighter/dist/esm/languages/hljs/excel';
+import python from 'react-syntax-highlighter/dist/esm/languages/hljs/python';
+import go from 'react-syntax-highlighter/dist/esm/languages/hljs/go';
+
+// Rejestrujemy języki w SyntaxHighlighter
+SyntaxHighlighter.registerLanguage('javascript', javascript);
+SyntaxHighlighter.registerLanguage('excel', excel);
+SyntaxHighlighter.registerLanguage('python', python);
+SyntaxHighlighter.registerLanguage('go', go);
+
+function MarkdownPage() {
+    // Pobieramy parametr markdownName z URL
+    const { markdownName } = useParams();
+    const [content, setContent] = useState('');
+
+    useEffect(() => {
+        // Pobieramy zawartość pliku Markdown
+        fetch(`/markdown/${markdownName}.md`)
+            .then(res => res.text())
+            .then(setContent)
+            .catch(console.error);
+    }, [markdownName]);
+
+    return (
+        <div>
+            <ReactMarkdown
+                children={content}
+                components={{
+                    // Definiujemy komponent do renderowania kodu z kolorowaniem składni
+                    code({node, inline, className, children, ...props}) {
+                        const match = /language-(\w+)/.exec(className || '')
+                        return !inline && match ? (
+                            <SyntaxHighlighter
+                                style={docco}
+                                language={match[1]}
+                                PreTag="div"
+                                {...props}
+                            >
+                                {String(children).replace(/\n$/, '')}
+                            </SyntaxHighlighter>
+                        ) : (
+                            <code className={className} {...props}>
+                                {children}
+                            </code>
+                        )
+                    }
+                }}
+            />
+        </div>
+    );
 }
 
-export default App;
+export default MarkdownPage;

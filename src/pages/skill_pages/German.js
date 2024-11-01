@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import './Classes.css'; 
 
 const cards = [
-  { id: 'example', title: 'Nebensätze', date: '2024-10-01', image: '/images/german.jpg'},
-];
+  { id: 'nebensaetze', title: 'Nebensätze', date: '2024-10-01', image: '/images/german.jpg'} ,
+]
 
 export default function German() {
   return (

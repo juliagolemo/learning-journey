@@ -71,3 +71,21 @@ Hier wird ein Zeitraum beschrieben, der in der Vergangenheit begonnen hat und bi
 •	**Gebrauch**: Bis drückt aus, dass eine Handlung oder ein Zustand bis zu einem bestimmten Zeitpunkt andauert, und danach endet oder sich verändert.
 	
 •	**Beispiel**: Warte hier, bis ich zurückkomme. / Er arbeitete, bis er müde war.
+
+# Konditionalsätze
+
+Konditionalsätze im Deutschen drücken Bedingungen aus, unter denen eine Handlung oder ein Zustand möglich wird. Dabei sind die Konjunktionen „wenn“ und „falls“ die gängigsten Mittel, um eine solche Bedingung auszudrücken. Hier ein Überblick über die Anwendung:
+
+## 1. Wenn
+„Wenn“ wird in der Regel genutzt, um eine allgemeine oder wiederkehrende Bedingung zu formulieren. Oft beschreibt es eine Bedingung, die wahrscheinlich oder regelmäßig zutrifft.
+
+**Beispiel**: „Wenn es morgen regnet, bleiben wir zu Hause.“
+**Bedeutung**: Sollte es morgen regnen, dann führt das dazu, dass wir zu Hause bleiben.
+	
+## 2. Falls
+
+ **Falls** wird verwendet, wenn die Bedingung eher unsicher ist oder als hypothetisch angesehen wird. Es unterstreicht, dass das Ereignis eventuell eintritt, aber weniger wahrscheinlich ist als bei „wenn“.
+		
+**Beispiel**: „Falls du morgen Zeit hast, können wir uns treffen.“	
+**Bedeutung**: Es ist nicht sicher, ob du morgen Zeit hast, aber wenn doch, könnten wir uns sehen.
+

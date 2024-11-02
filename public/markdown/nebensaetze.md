@@ -1,5 +1,7 @@
 # Nebenätze
 
+![Alt text for image](/images/markdown/nebenseatz.jpg)
+
 Nebensätze sind Nebensätze, die grammatikalisch von einem Hauptsatz abhängig sind und diesen inhaltlich ergänzen. Sie können nicht alleine stehen, sondern brauchen einen Hauptsatz, um einen vollständigen Satz zu bilden. In Nebensätzen steht das konjugierte Verb meist am Ende des Satzes. Es gibt verschiedene Arten von Nebensätzen: 
 
 # Temporalsätze 

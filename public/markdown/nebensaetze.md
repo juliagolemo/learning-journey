@@ -89,3 +89,21 @@ Konditionalsätze im Deutschen drücken Bedingungen aus, unter denen eine Handlu
 **Beispiel**: „Falls du morgen Zeit hast, können wir uns treffen.“	
 **Bedeutung**: Es ist nicht sicher, ob du morgen Zeit hast, aber wenn doch, könnten wir uns sehen.
 
+# Kausalsätze
+
+Kausalätze im Deutschen drücken den Grund oder die Ursache für eine Handlung oder einen Zustand aus. Die häufigsten Konjunktionen dafür sind „weil“ und „da“. Hier ist eine Übersicht über die Verwendung:
+
+## Weil
+
+ **Weil** wird verwendet, um eine klare und direkte Begründung für eine Handlung oder Aussage zu geben. Es ist die am häufigsten verwendete Konjunktion, um Gründe zu erläutern, besonders in der gesprochenen Sprache.
+	
+**Beispiel**: „Ich gehe nach Hause, weil ich müde bin.“
+**Bedeutung**: Der Grund, weshalb ich nach Hause gehe, ist, dass ich müde bin.
+
+## Da
+
+**Da** hat eine ähnliche Bedeutung wie „weil“ und kann auch zur Angabe von Gründen verwendet werden. Allerdings wird „da“ oft benutzt, wenn der Grund schon bekannt ist oder weniger im Vordergrund steht. „Da“ klingt formeller und wird häufiger am Satzanfang verwendet.
+
+**Beispiel**: „Da ich müde bin, gehe ich nach Hause.“
+**Bedeutung**: Da ich müde bin (und dies der Grund ist), entscheide ich mich, nach Hause zu gehen.
+

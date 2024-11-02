@@ -79,15 +79,14 @@ Konditionalsätze im Deutschen drücken Bedingungen aus, unter denen eine Handlu
 ## 1. Wenn
 „Wenn“ wird in der Regel genutzt, um eine allgemeine oder wiederkehrende Bedingung zu formulieren. Oft beschreibt es eine Bedingung, die wahrscheinlich oder regelmäßig zutrifft.
 
-**Beispiel**: „Wenn es morgen regnet, bleiben wir zu Hause.“
-**Bedeutung**: Sollte es morgen regnen, dann führt das dazu, dass wir zu Hause bleiben.
+• **Beispiel**: „Wenn es morgen regnet, bleiben wir zu Hause.“
 	
 ## 2. Falls
 
  **Falls** wird verwendet, wenn die Bedingung eher unsicher ist oder als hypothetisch angesehen wird. Es unterstreicht, dass das Ereignis eventuell eintritt, aber weniger wahrscheinlich ist als bei „wenn“.
 		
-**Beispiel**: „Falls du morgen Zeit hast, können wir uns treffen.“	
-**Bedeutung**: Es ist nicht sicher, ob du morgen Zeit hast, aber wenn doch, könnten wir uns sehen.
+• **Beispiel**: „Falls du  Zeit hast, können wir uns treffen“	
+
 
 # Kausalsätze
 
@@ -97,13 +96,35 @@ Kausalätze im Deutschen drücken den Grund oder die Ursache für eine Handlung 
 
  **Weil** wird verwendet, um eine klare und direkte Begründung für eine Handlung oder Aussage zu geben. Es ist die am häufigsten verwendete Konjunktion, um Gründe zu erläutern, besonders in der gesprochenen Sprache.
 	
-**Beispiel**: „Ich gehe nach Hause, weil ich müde bin.“
-**Bedeutung**: Der Grund, weshalb ich nach Hause gehe, ist, dass ich müde bin.
+• **Beispiel**: „Ich gehe nach Hause, weil ich müde bin.“
+
 
 ## Da
 
 **Da** hat eine ähnliche Bedeutung wie „weil“ und kann auch zur Angabe von Gründen verwendet werden. Allerdings wird „da“ oft benutzt, wenn der Grund schon bekannt ist oder weniger im Vordergrund steht. „Da“ klingt formeller und wird häufiger am Satzanfang verwendet.
 
-**Beispiel**: „Da ich müde bin, gehe ich nach Hause.“
-**Bedeutung**: Da ich müde bin (und dies der Grund ist), entscheide ich mich, nach Hause zu gehen.
+• **Beispiel**: „Da ich müde bin, gehe ich nach Hause.“
+
+# Konsekutivsätze
+
+**Konsekutivsätze** im Deutschen drücken einen Gegensatz oder eine Einschränkung aus, also eine Situation, bei der das Resultat anders ist als erwartet. Die Konjunktionen „obwohl“, „obgleich“ und „obschon“ werden dafür verwendet. Hier ist eine Übersicht über ihre Anwendung:
+
+## Obwohl 
+**Obwohl** ist die am häufigsten verwendete Konjunktion, um einen Gegensatz oder eine Einschränkung auszudrücken. Sie wird in allen Sprachstilen benutzt, sowohl in der gesprochenen als auch in der geschriebenen Sprache.
+
+• **Beispiel** „Obwohl es regnet, gehen wir spazieren.“
+		
+## Obgleich
+ **Obgleich** hat die gleiche Bedeutung wie „obwohl“, wirkt aber formeller und wird häufiger in der Schriftsprache verwendet.
+	
+• **Beispiel**: „Obgleich er müde war, arbeitete er weiter.“
+		
+## Obschon
+ „Obschon“ ist ebenfalls ein Synonym für „obwohl“ und „obgleich“, kommt aber eher selten vor und klingt leicht veraltet. Es wird meist in der Schriftsprache verwendet.
+
+• **Beispiel**: „Obschon es spät war, gingen sie noch aus.“
+
+
+
+
 

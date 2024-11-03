@@ -153,6 +153,30 @@ Der Konnektor **„indem”** leitet einen Nebensatz ein, der beschreibt, auf we
 **„Anstatt zu” (oder „statt zu”)** beschreibt eine Handlung, die anstelle einer anderen ausgeführt wird.
 
 **Beispiel:** Anstatt zu arbeiten, hat er den ganzen Tag geschlafen.
+
+# Finalsätze 
+
+Finalsätze sind Nebensätze, die den Zweck oder das Ziel einer Handlung beschreiben. Sie beantworten die Frage „wozu?” oder „mit welchem Ziel?”. Finalsätze werden im Deutschen häufig mit „damit” oder „um...zu” gebildet.
+
+## 1. Damit
+
+Der Konnektor **„damit”** wird verwendet, wenn der Zweck für eine andere Person oder ein anderes Subjekt gilt. Er leitet einen Nebensatz ein, in dem das Verb am Ende steht.
+
+**Beispiel:**
+
+- Ich spreche langsam, damit du mich besser verstehst.
+
+- Er lernt viel, damit er die Prüfung besteht.
+
+## 2. Um...zu
+
+Die Konstruktion **„um...zu”** wird verwendet, wenn das Subjekt in beiden Teilen des Satzes gleich ist. Diese Struktur ist einfacher als „damit”, weil das Verb im Infinitiv steht.
+
+**Beispiel:**
+        
+- Ich lerne Deutsch, um in Deutschland arbeiten zu können.
+        
+- Sie steht früh auf, um den Zug nicht zu verpassen.
     
 
 

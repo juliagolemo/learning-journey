@@ -126,6 +126,37 @@ Kausalätze im Deutschen drücken den Grund oder die Ursache für eine Handlung 
 
 • **Beispiel**: „Obschon es spät war, gingen sie noch aus.“
 
+# Modalsätze 
+
+Modalsätze sind spezielle Nebensätze, die ausdrücken, wie etwas geschieht. In der deutschen Sprache werden Modalsätze durch bestimmte Strukturen eingeleitet, wie **„indem”**, **„dadurch, dass”**, **„ohne zu”** und **„anstatt zu”**.
+
+## 1. Indem
+
+Der Konnektor **„indem”** leitet einen Nebensatz ein, der beschreibt, auf welche Weise oder durch welches Mittel etwas geschieht.
+
+**Beispiel**: Er lernt Deutsch, indem er jeden Tag eine Stunde übt.
+
+## 2. Dadurch, dass
+
+**„Dadurch, dass”** beschreibt ebenfalls die Art und Weise, wie etwas geschieht, und stellt einen Zusammenhang zwischen zwei Handlungen her.
+
+**Beispiel:** Sie spart Geld, dadurch dass sie auf Luxus verzichtet.
+
+## 3. Ohne zu
+
+**„Ohne zu”** drückt aus, dass eine Handlung stattfindet, ohne dass eine andere Handlung ausgeführt wird.
+
+**Beispiel:** Er ging ins Kino, ohne seine Hausaufgaben zu machen.
+
+## 4. Anstatt zu
+
+**„Anstatt zu” (oder „statt zu”)** beschreibt eine Handlung, die anstelle einer anderen ausgeführt wird.
+
+**Beispiel:** Anstatt zu arbeiten, hat er den ganzen Tag geschlafen.
+    
+
+
+
 
 
 

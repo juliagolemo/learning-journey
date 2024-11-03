@@ -1,20 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom'; // Do pobrania parametrów z URL
 import ReactMarkdown from 'react-markdown'; // Do renderowania Markdown
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter'; // Do kolorowania składni
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import remarkGfm from 'remark-gfm'; // Obsługa składni GitHub Flavored Markdown
+import rehypeHighlight from 'rehype-highlight'; // Automatyczne kolorowanie składni
 
-// Importujemy języki programowania do kolorowania składni
-import javascript from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript';
-import excel from 'react-syntax-highlighter/dist/esm/languages/hljs/excel';
-import python from 'react-syntax-highlighter/dist/esm/languages/hljs/python';
-import go from 'react-syntax-highlighter/dist/esm/languages/hljs/go';
+// Import jasnego motywu dla GitHub Markdown
+import 'github-markdown-css/github-markdown-light.css';
 
-// Rejestrujemy języki w SyntaxHighlighter
-SyntaxHighlighter.registerLanguage('javascript', javascript);
-SyntaxHighlighter.registerLanguage('excel', excel);
-SyntaxHighlighter.registerLanguage('python', python);
-SyntaxHighlighter.registerLanguage('go', go);
+// Import jasnego motywu dla kolorowania składni
+import 'highlight.js/styles/github.css'; // Lub inny jasny motyw
 
 function MarkdownPage() {
     // Pobieramy parametr markdownName z URL
@@ -29,30 +23,14 @@ function MarkdownPage() {
             .catch(console.error);
     }, [markdownName]);
 
+    
+
     return (
-        <div>
+        <div className="markdown-body">
             <ReactMarkdown
                 children={content}
-                components={{
-                    // Definiujemy komponent do renderowania kodu z kolorowaniem składni
-                    code({node, inline, className, children, ...props}) {
-                        const match = /language-(\w+)/.exec(className || '')
-                        return !inline && match ? (
-                            <SyntaxHighlighter
-                                style={docco}
-                                language={match[1]}
-                                PreTag="div"
-                                {...props}
-                            >
-                                {String(children).replace(/\n$/, '')}
-                            </SyntaxHighlighter>
-                        ) : (
-                            <code className={className} {...props}>
-                                {children}
-                            </code>
-                        )
-                    }
-                }}
+                remarkPlugins={[remarkGfm]}
+                rehypePlugins={[rehypeHighlight]}
             />
         </div>
     );

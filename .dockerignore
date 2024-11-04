@@ -26,3 +26,9 @@ Dockerfile
 .dockerignore
 
 src.zip
+
+# Ignorowanie plików konfiguracyjnych Docker i kompozycji Docker
+docker-compose.yml
+
+# Ignorowanie plików specyficznych dla repozytorium
+.github/

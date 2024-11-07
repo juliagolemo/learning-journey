@@ -10,11 +10,11 @@ For example, if you have sales data with columns like "Date," "Product," "Region
 1. Select the cells from which you want to create a pivot table.
 2. Select **Insert > Pivot table**.
 
-![image](8.2.1_zdjęcie_1.jpg)
+![Alt text for image](/images/markdown/pt1.jpg)
 
 3. Choose where you want to put the pivot table report. You can choose between a new sheet or an existing sheet.
 
-![image](8.2.1_zdjęcie_2.jpg)
+![Alt text for image](/images/markdown/pt2.jpg)
 
 After the creation of the pivot table report, a window will open with the table fields that can be analyzed. Drag the data fields you are interested in here to the relevant areas. The data fields can be placed in four areas of the Pivot Table:
 
@@ -26,7 +26,7 @@ After the creation of the pivot table report, a window will open with the table 
 
 - **Values** - data relating to a given row and column. Here we can select several options for the value field (sum, counter, average, maximum, minimum, standard deviation).
 
-![image](8.2.2_zdjęcie_1_małe.jpg)
+![Alt text for image](/images/markdown/pt3.jpg)
 
 ## Common use cases for pivot tables in Excel
 

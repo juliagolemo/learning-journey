@@ -15,7 +15,7 @@ import Azure from "./pages/skill_pages/Azure";
 import Git from "./pages/skill_pages/Git";
 import GoLang from "./pages/skill_pages/GoLang";
 import German from "./pages/skill_pages/German";
-import SAP from "./pages/skill_pages/SAP";
+import WebDevelopment from "./pages/skill_pages/WebDevelopment";
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
           <Route path="/technologies/git" element={<Git />} />
           <Route path="/technologies/golang" element={<GoLang />} />
           <Route path="/technologies/german" element={<German />} />
-          <Route path="/technologies/sap" element={<SAP />} />
+          <Route path="/technologies/webdevelopment" element={<WebDevelopment />} />
         </Routes>
       </div>
     </>

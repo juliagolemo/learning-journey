@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import './Classes.css'; 
 
 const cards = [
-  { id: 'example', title: 'SAP ch. 1', date: '2024-10-01', image: '/images/sap_img.png'},
-  { id: 'example', title: 'SAP ch. 2', date: '2024-10-01', image: '/images/sap_img.png'}
+  { id: 'example', title: 'API', date: '2024-11-09', image: '/images/api.png'},
 ];
 
-export default function SAP() {
+export default function WebDevelopment() {
   return (
     <div className="cards-container">
       {cards.map(card => (

@@ -34,10 +34,10 @@ const technologies = [
     description: 'My progress in learning German.',
   },
   {
-    name: 'SAP HCM',
-    image: '/images/sap_success_factors.png',
-    path: 'sap',
-    description: 'SAP HCM is an SAP module for Human Capital Management.',
+    name: 'Web Development',
+    image: '/images/webdevelopment.webp',
+    path: 'webdevelopment',
+    description: 'Process of a Web Development.',
   }
 ];
 

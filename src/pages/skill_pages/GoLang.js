@@ -11,6 +11,5 @@ const cards_list = [
 export default function GoLang() {
   return (
     <CardsList cards_list={cards_list} />
- 
   );
 }

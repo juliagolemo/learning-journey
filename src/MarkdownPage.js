@@ -23,8 +23,6 @@ function MarkdownPage() {
             .catch(console.error);
     }, [markdownName]);
 
-    
-
     return (
         <div className="markdown-body">
             <ReactMarkdown

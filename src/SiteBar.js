@@ -40,9 +40,9 @@ const Sidebar = () => {
         <li>
           <Link to="/about">
             <i className='bx bx-user'></i>
-            <span className="links_name">User</span>
+            <span className="links_name">About</span>
           </Link>
-          <span className="tooltip">User</span>
+          <span className="tooltip">About</span>
         </li>
         <li>
           <Link to="/tutorial">

@@ -52,23 +52,4 @@
   background-color: #0056b3;
 }
 
-/* Responsywność dla tabletów */
-@media (max-width: 1024px) {
-  .cards-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
-/* Responsywność dla małych tabletów i telefonów w poziomie */
-@media (max-width: 768px) {
-  .cards-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Responsywność dla telefonów */
-@media (max-width: 480px) {
-  .cards-container {
-    grid-template-columns: 1fr;
-  }
-}

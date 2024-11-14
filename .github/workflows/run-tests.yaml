@@ -54,7 +54,7 @@ jobs:
       - name: Run tests
         working-directory: tests
         env:
-          BASE_URL: http://localhost:8080
+          TEST_APP_BASE_URL: http://localhost:8080
         run: pytest
 
       # 8. Stop and remove application container

@@ -1,0 +1,65 @@
+name: Build and Test on Pull Request
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Build Docker image
+      - name: Build Docker image
+        run: |
+          docker build -t learning-journey:pr-${{ github.event.number }} .
+
+      # 3. Run application container
+      - name: Run application container
+        run: |
+          docker run -d --name learning_journey_container -p 8080:80 learning-journey:pr-${{ github.event.number }}
+
+      # 4. Wait for application to be ready
+      - name: Wait for application to be ready
+        run: |
+          for i in {1..30}; do
+            if curl -s http://localhost:8080 > /dev/null; then
+              echo "Application is up!"
+              exit 0
+            fi
+            echo "Waiting for application to be ready... ($i/30)"
+            sleep 2
+          done
+          echo "Application did not become ready in time."
+          exit 1
+
+      # 5. Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'  # Adjust to your Python version
+
+      # 6. Install test dependencies
+      - name: Install test dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r tests/requirements.txt
+          playwright install chromium
+
+      # 7. Run tests
+      - name: Run tests
+        working-directory: tests
+        env:
+          BASE_URL: http://localhost:8080
+        run: pytest
+
+      # 8. Stop and remove application container
+      - name: Stop and remove application container
+        if: always()
+        run: |
+          docker stop my_app_container
+          docker rm my_app_containe

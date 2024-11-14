@@ -32,3 +32,6 @@ docker-compose.yml
 
 # Ignorowanie plików specyficznych dla repozytorium
 .github/
+
+# tests
+tests/

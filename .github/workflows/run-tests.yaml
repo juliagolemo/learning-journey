@@ -44,7 +44,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'  # Adjust to your Python version
+          python-version: '3.9'
 
       # 6. Install test dependencies
       - name: Install test dependencies

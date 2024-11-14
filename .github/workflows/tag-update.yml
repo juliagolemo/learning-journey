@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   tagging_and_docker:
-    needs: [Build and Test]
+    needs: [build_and_test]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

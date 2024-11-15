@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Technologies.css';
+import CircleSkillsList from '../components/CircleSkillsList';
 
 const technologies = [
   {
@@ -41,29 +40,9 @@ const technologies = [
   }
 ];
 
-
 function Technologies() {
   return (
-    <div className="circle-container">
-      <div className="circle-content">
-        {technologies.map((tech, index) => (
-          <div key={index} className={`circle-item item-${index + 1}`}>
-            <Link to={`/technologies/${tech.path}`} className="circle-link">
-              <div className="circle-item-inner">
-                <img src={tech.image} alt={tech.name} className="circle-image" />
-                <p className="circle-name">{tech.name}</p>
-                <div className="circle-description">
-                  {tech.description}
-                </div>
-              </div>
-            </Link>
-          </div>
-        ))}
-        <div className="circle-center">
-          <h2>Tools</h2>
-        </div>
-      </div>
-    </div>
+    <CircleSkillsList technologies={technologies} />
   );
 }
 

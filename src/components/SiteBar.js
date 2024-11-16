@@ -3,6 +3,20 @@ import 'boxicons/css/boxicons.min.css'; // Import Box Icons CSS
 import './SiteBar.css';
 import { Link } from 'react-router-dom';
 
+
+const SiteBarItem = ({ text, link_path, icon }) => {
+  return (
+    <li>
+      <Link to={link_path}>
+        <i className={icon}></i>
+        <span className="links_name">{text}</span>
+      </Link>
+      <span className="tooltip">{text}</span>
+    </li>
+  );
+};
+
+
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,34 +37,12 @@ const Sidebar = () => {
           <input type="text" placeholder="Search..." />
           <span className="tooltip">Search</span>
         </li>
-        <li>
-          <Link to="/">
-            <i className='bx bxs-home-circle'></i>
-            <span className="links_name">Home</span>
-          </Link>
-          <span className="tooltip">Home</span>
-        </li>
-        <li>
-          <Link to="/technologies">
-            <i className='bx bx-grid-alt'></i>
-            <span className="links_name">Dashboard</span>
-          </Link>
-          <span className="tooltip">Dashboard</span>
-        </li>
-        <li>
-          <Link to="/about">
-            <i className='bx bx-user'></i>
-            <span className="links_name">About</span>
-          </Link>
-          <span className="tooltip">About</span>
-        </li>
-        <li>
-          <Link to="/tutorial">
-            <i className='bx bxs-book-open'></i>
-            <span className="links_name">Tutorial</span>
-          </Link>
-          <span className="tooltip">Tutorial</span>
-        </li>
+
+        <SiteBarItem text={'Home'} link_path={'/'} icon={'bx bxs-home-circle'} />
+        <SiteBarItem text={'Dashboard'} link_path={'/technologies'} icon={'bx bx-grid-alt'} />
+        <SiteBarItem text={'About'} link_path={'/about'} icon={'bx bx-user'} />
+        <SiteBarItem text={'Tutorial'} link_path={'/tutorial'} icon={'bx bxs-book-open'} />
+    
         <li className="profile">
           <div className="profile-details">
             {/* Opcjonalnie dodaj obrazek profilowy */}

@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "./SiteBar";
+import Sidebar from "./components/SiteBar";
 import Pricing from "./pages/Pricing";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -9,7 +9,6 @@ import { Route, Routes } from "react-router-dom";
 import Tutorial from "./pages/Tutorial";
 import MarkdownPage from "./MarkdownPage";
 import Technologies from "./pages/Technologies";
-import './SiteBar.css';
 import Excel from "./pages/skill_pages/Excel";
 import Azure from "./pages/skill_pages/Azure";
 import Git from "./pages/skill_pages/Git";

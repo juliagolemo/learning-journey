@@ -4,16 +4,16 @@ import './SiteBar.css';
 import { Link } from 'react-router-dom';
 
 
-const SiteBarItem = ({ text }) => {
+const SiteBarItem = ({ text, link_path }) => {
   return (
-  <li>
-<Link to="/">
-  <i className='bx bxs-home-circle'></i>
-  <span className="links_name">{text}</span>
-</Link>
-<span className="tooltip">{text}</span>
-</li>
-);
+    <li>
+      <Link to={link_path}>
+        <i className='bx bxs-home-circle'></i>
+        <span className="links_name">{text}</span>
+      </Link>
+      <span className="tooltip">{text}</span>
+    </li>
+  );
 };
 
 
@@ -38,7 +38,8 @@ const Sidebar = () => {
           <span className="tooltip">Search</span>
         </li>
 
-        <SiteBarItem text={'Home'} />
+        <SiteBarItem text={'Home'} link_path={'/'} />
+
         <li>
           <Link to="/technologies">
             <i className='bx bx-grid-alt'></i>

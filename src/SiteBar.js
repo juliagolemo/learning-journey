@@ -3,6 +3,20 @@ import 'boxicons/css/boxicons.min.css'; // Import Box Icons CSS
 import './SiteBar.css';
 import { Link } from 'react-router-dom';
 
+
+const SiteBarItem = ({ text }) => {
+  return (
+  <li>
+<Link to="/">
+  <i className='bx bxs-home-circle'></i>
+  <span className="links_name">{text}</span>
+</Link>
+<span className="tooltip">{text}</span>
+</li>
+);
+};
+
+
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,13 +37,8 @@ const Sidebar = () => {
           <input type="text" placeholder="Search..." />
           <span className="tooltip">Search</span>
         </li>
-        <li>
-          <Link to="/">
-            <i className='bx bxs-home-circle'></i>
-            <span className="links_name">Home</span>
-          </Link>
-          <span className="tooltip">Home</span>
-        </li>
+
+        <SiteBarItem text={'Home'} />
         <li>
           <Link to="/technologies">
             <i className='bx bx-grid-alt'></i>

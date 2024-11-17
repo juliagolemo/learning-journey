@@ -6,7 +6,7 @@ import HomeRedirect from "./hooks/HomeRedirect";
 import NavigationTracker from './hooks/NavigationTracker';
 import { Route, Routes } from "react-router-dom";
 import Tutorial from "./pages/Tutorial";
-import MarkdownPage from "./MarkdownPage";
+import MarkdownPage from "./pages/MarkdownPage";
 import Technologies from "./pages/Technologies";
 import Excel from "./pages/skill_pages/Excel";
 import Azure from "./pages/skill_pages/Azure";

@@ -2,7 +2,7 @@ import React from 'react';
 import CardsList from '../../components/CardsList'; 
 
 const cards_list = [
-  { id: 'nebensaetze', title: 'Nebensätze', date: '2024-10-01', image: '/images/german.jpg'} ,
+  { id: 'nebensaetze', title: 'Nebensätze', date: '2024-10-01', image: '/images/cards/german//german.jpg'} ,
 ]
 
 export default function German() {

@@ -80,5 +80,29 @@ Response:
 ```bash
 204 No Content
 ```
+## Working with JSON in REST APIs
 
+JSON (JavaScript Object Notation) is a common format for sending and receiving data when working with REST APIs. It’s lightweight, easy to read, and looks like a simplified version of a dictionary or object in programming.
+
+<br>
+
+**Sending JSON with REST APIs**
+
+1. Include JSON in Requests: When sending data (with POST or PUT methods), you include the JSON payload in the request body.
+
+2. Use Headers: You must tell the API that you're sending JSON by adding the Content-Type: application/json header.
+
+3. Example with curl:
+- **POST** Request (Create a new user):
+``` bash
+curl -X POST http://example.com/users \
+    -H "Content-Type: application/json" \
+    -d '{"name": "John", "age": 30}'
+```
+- **PUT** Request (Update a user):
+```bash
+curl -X PUT http://example.com/users/1 \
+     -H "Content-Type: application/json" \
+     -d '{"name": "John Doe", "age": 31}'
+```
 

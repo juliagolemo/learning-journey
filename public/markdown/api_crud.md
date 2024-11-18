@@ -9,6 +9,15 @@ REST uses standard web methods like GET, POST, PUT, and DELETE, just like when y
 It allows you to ask for data or send data to a server.
     The data is usually exchanged in a format like JSON (a simple text format).
 
+## Typical Methods with Status Codes
+| Method   | Purpose                  | Typical HTTP Status Codes                                  |
+|----------|--------------------------|-----------------------------------------------------------|
+| **GET**  | Retrieve data            | `200 OK`, `404 Not Found`                                 |
+| **POST** | Create a new resource    | `201 Created`, `400 Bad Request`                          |
+| **PUT**  | Update or replace data   | `200 OK`, `204 No Content`, `404 Not Found`, `400 Bad Request` |
+| **DELETE**| Delete a resource       | `204 No Content`, `200 OK`, `404 Not Found`              |
+
+
 ## How to use GET, PUT, POST, DELETE methods?
 ### GET
 
@@ -105,4 +114,5 @@ curl -X PUT http://example.com/users/1 \
      -H "Content-Type: application/json" \
      -d '{"name": "John Doe", "age": 31}'
 ```
+
 

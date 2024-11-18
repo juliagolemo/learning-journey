@@ -84,7 +84,7 @@ Response:
 
 JSON (JavaScript Object Notation) is a common format for sending and receiving data when working with REST APIs. It’s lightweight, easy to read, and looks like a simplified version of a dictionary or object in programming.
 
-<br>
+
 
 **Sending JSON with REST APIs**
 

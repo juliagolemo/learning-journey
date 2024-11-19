@@ -6,10 +6,10 @@ labels: ''
 assignees: juliagolemo
 
 ---
-
-### **Description**
 As a **[user role]**,
+
 I want **[what the user wants to achieve]**,
+
 So that **[why the user needs it / value it provides]**.
 
 ---
@@ -29,3 +29,4 @@ So that **[why the user needs it / value it provides]**.
 - [ ] Deployed and validated in a test/staging environment.
 
 ### **Additional Context**
+None

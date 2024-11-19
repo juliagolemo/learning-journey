@@ -6,6 +6,7 @@ labels: ''
 assignees: juliagolemo
 
 ---
+
 As a **[user role]**,
 
 I want **[what the user wants to achieve]**,

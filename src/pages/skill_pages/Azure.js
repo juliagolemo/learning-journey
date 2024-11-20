@@ -8,6 +8,7 @@ const cards_list = [
   { id: 'azure_fundamentals', title: 'Azure Fundamentals', date: '2024-10-02', image: `${azure_images_path}microsoft-azure.png` },
   { id: 'azure_app_service', title: 'Azure App Service', date: '2024-10-02', image: `${azure_images_path}azure.png` },
   { id: 'what_is_azure', title: 'What is Azure', date: '2024-10-26', image:  `${azure_images_path}Microsoft Azure Blog.webp` },
+  { id: 'dockerhub_webhook_azure', title: 'DockerHub WebHooks with Azure', date: '2024-11-20', image:  `${azure_images_path}webhook_dh.png` },
 ];
 
 export default function Azure() {

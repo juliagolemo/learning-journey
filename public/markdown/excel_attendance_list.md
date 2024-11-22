@@ -16,7 +16,7 @@ You decided to use **MS Excel** to improve your work. The spreadsheet you create
 - the number of overtime,
 - number of days on sick leave,
 - the number of days on holidays,
-- the number of days with vnauthorised absence,
+- the number of days with unauthorised absence,
 - number of days on holidays on demand.
 
 You want the overtime column only to show overtime. If there is no overtime, this field **must remain empty**.
@@ -33,14 +33,15 @@ The second practical example presented is quite a simple one. However, the use o
 ![Alt text for image](/images/markdown/attendance_list.jpg)
 
 ## How to create an Attendance List?
-1) Counting this hours worked
+**Counting the hours worked**
 - SUM function - we mark the range of the whole month
-2) Counting the number of overtime (we want the cell to be empty when there are no overtime)
-- IF function - checking if **hours worked** are bigger than **working hours**
+
+**Counting the number of overtime** (we want the cell to be empty when there are no overtime)
+- IF function - checking if **hours worked** are greater than **working hours**
 
 ![Alt text for image](/images/markdown/excel1.png)
 
-- Blocking a cell with hours of work per month (if the sum of hours is less, insert "" which means an empty cell)
+Blocking a cell with hours of work per month (if the sum of hours is less, insert "" which means an empty cell)
 
 ![Alt text for image](/images/markdown/excel2.png)
 
@@ -52,11 +53,11 @@ Blocking a cell with hours of work per month
 
 ![Alt text for image](/images/markdown/excel4.png)
 
-3) Counting S, H, UA, HD
 - COUNTIF function (in terms of range, insert the whole month)
-blocking column by column
+
+- blocking column by column
 as a criterion we insert the search value (S,H etc.)
-blocking after the row
+- blocking after the row
 
 ## Filtering the employees
 

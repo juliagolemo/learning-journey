@@ -7,5 +7,5 @@ src/ @SzymonCogiel @juliagolemo
 # Product Owner team owns the public folder
 public/ @juliagolemo
 
-# Tester team owns the test folder
+# Tester team owns the test folder 
 test/ @SzymonCogiel @juliagolemo

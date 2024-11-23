@@ -1,0 +1,11 @@
+# DevOps team owns the .github folder
+.github/ @SzymonCogiel
+
+# Developers team owns the src folder
+src/ @SzymonCogiel @juliagolemo
+
+# Product Owner team owns the public folder
+public/ @juliagolemo
+
+# Tester team owns the test folder
+test/ @SzymonCogiel @juliagolemo

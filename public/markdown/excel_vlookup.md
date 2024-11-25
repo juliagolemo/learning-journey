@@ -1,4 +1,4 @@
-# Excel functions (VLOOKUP, Index Function, Function Conditions)
+# Excel functions (VLOOKUP, Index Function, Match Function)
 
 ## The VLOOKUP function
 
@@ -87,7 +87,7 @@ For a better understanding we will give a simple example. Imagine that we have a
 
 Example
 
-![Alt text for image](/images/markdown/example1.png)
+![Alt text for image](/images/markdown/example1.jpg)
 
 Let's get back to our product list. Imagine that we have a shopping list in Excel (cells B6:B12). We are looking for cheese on this list (cell E4). We want the position where the cheese is in cell E5 to appear.
 

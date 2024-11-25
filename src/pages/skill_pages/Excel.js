@@ -8,6 +8,7 @@ const cards_list = [
   { id: 'excel_pivot_table', title: 'Pivot Table', date: '2024-11-07', image: `${excel_images_path}pivot_table.png`},
   { id: 'excel_attendance_list', title: 'Attendance List', date: '2024-11-07', image: `${excel_images_path}excel_card.webp`},
   { id: 'home_budget', title: 'Home Budget', date: '2024-11-24', image: `${excel_images_path}home_excel.jpg`},
+  { id: 'excel_vlookup', title: 'Excel functions (VLOOKUP, Index Function, Match Function)', date: '2024-11-25', image: `${excel_images_path}excel_new.jpg`},
 ];
 
 export default function Excel() {

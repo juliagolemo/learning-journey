@@ -45,4 +45,73 @@ Now we can put a pivot chart on the "report" sheet.
 
 *Depeneding on the chart, we can display data for the specific category*
 
+The third practical example presented is quite a simple example of preparing reports as well as spreadsheets for data analysis. In the presented example we will apply:
+
+- pivot tables,
+- pivoting charts,
+- charts,
+- the form controls,
+- VLOOKUP function,
+- SUMIFS function
+
+1. Create a list of data to choose from in the combo box
+
+![Alt text for image](/images/markdown/sales1.png)
+
+2. Insert combo boxes (Developer -> Insert)
+3. Format the combo boxes by assigning it: input appeal cell (as an input we give our list of countries)
+
+*Now we have a list of countries in the combo box and the cell link changes value depending on the position of a particular country on the list*
+
+4. We do the same with the combo box for product categories
+
+*We will need data in cerrular links when using formulas*
+
+We are interested in sales in a particular country.
+
+![Alt text for image](/images/markdown/sales2.png)
+
+We will need two functions here: 
+- VLOOKUP
+- SUMIFS
+
+![Alt text for image](/images/markdown/sales3.png)
+![Alt text for image](/images/markdown/sales33.png)
+
+In this case it will be a 2018 sale.
+
+5. Give the range of the first criterion (in this case it will be the Country column)
+
+Due to the country range Criterion_1 will be the country selected in the Combi Box.
+
+6. Now we need a VLOOKUP function.
+
+![Alt text for image](/images/markdown/sales4.png)
+
+The table searched will be a previously created list of countries.
+
+The comulsive number will be 2, as the country name is in the second column.
+
+The searched range is 0 because we are looking exactly for this particular value.
+
+7. We return to the SUMIFS function.
+
+In the same way, we add two additional criteria:
+
+- Category
+- Month
+
+In the case of a month, we use the column with the name of the month.
+
+In the case of sales for 2019, we need to change the basic scope in SUMIFS. 
+
+![Alt text for image](/images/markdown/sales5.png)
+
+8. Now we can insert the chart.
+
+We do the pie charts in a similar way.
+
+![Alt text for image](/images/markdown/sales6.png)
+
+
 

@@ -34,7 +34,7 @@ Now we can put a pivot chart on the "report" sheet.
 
 6. 
 
-![Alt text for image](/images/markdown/sr4.png)
+![Alt text for image](/images/markdown/sr4_change.png)
 
 7. Adjust the field size
 8. Adjust the appearance of the chart. add the title

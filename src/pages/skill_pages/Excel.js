@@ -9,7 +9,9 @@ const cards_list = [
   { id: 'excel_attendance_list', title: 'Attendance List', date: '2024-11-07', image: `${excel_images_path}excel_card.webp`},
   { id: 'home_budget', title: 'Home Budget', date: '2024-11-24', image: `${excel_images_path}home_excel.jpg`},
   { id: 'excel_vlookup', title: 'Excel functions (VLOOKUP, Index Function, Match Function)', date: '2024-11-25', image: `${excel_images_path}excel_new.jpg`},
+  { id: 'sales_report', title: 'Sales Report', date: '2024-11-25', image: `${excel_images_path}sales_report.webp`},
 ];
+
 
 export default function Excel() {
   return (

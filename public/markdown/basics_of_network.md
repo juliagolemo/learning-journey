@@ -69,3 +69,10 @@ W międzyczasie, Twój smartfon i telewizor też mogą łączyć się z Internet
 Gdybyś chciał uruchomić własny serwer w domu (np. serwer gier), mógłbyś zadecydować o otwarciu konkretnego **portu** na routerze, który przekieruje ruch z Internetu do Twojego komputera. Równocześnie, by zwiększyć bezpieczeństwo, możesz użyć **firewalla**, który zablokuje niepożądane próby dostępu z zewnątrz do innych portów i usług. Dzięki temu masz kontrolę nad tym, co i w jaki sposób może przechodzić przez Twoją sieć.
 
 Tak więc, w tym prostym przykładzie widać, jak różne komponenty sieci – prywatne adresy IP, publiczny adres IP, porty i firewall – współpracują, aby zapewnić Ci płynny dostęp do Internetu oraz bezpieczeństwo i kontrolę nad tym, co dzieje się w Twojej domowej sieci.
+
+
+
+
+
+
+

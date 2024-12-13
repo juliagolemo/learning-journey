@@ -9,3 +9,6 @@ public/ @juliagolemo
 
 # Tester team owns the test folder
 test/ @SzymonCogiel @juliagolemo
+
+# CODEOWNERS
+* @SzymonCogiel @juliagolemo

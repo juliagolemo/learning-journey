@@ -39,9 +39,9 @@ const Sidebar = () => {
         </li>
 
         <SiteBarItem text={'Home'} link_path={'/'} icon={'bx bxs-home-circle'} />
+        <SiteBarItem text={'Skills'} link_path={'/tutorial'} icon={'bx bxs-book-open'} />
         <SiteBarItem text={'Dashboard'} link_path={'/technologies'} icon={'bx bx-grid-alt'} />
         <SiteBarItem text={'About'} link_path={'/about'} icon={'bx bx-user'} />
-        <SiteBarItem text={'Tutorial'} link_path={'/tutorial'} icon={'bx bxs-book-open'} />
     
         <li className="profile">
           <div className="profile-details">

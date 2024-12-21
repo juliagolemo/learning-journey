@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'boxicons/css/boxicons.min.css'; // Import Box Icons CSS
-import './SiteBar.css';
+import './SideBar.css';
 import { Link } from 'react-router-dom';
 
 
@@ -39,9 +39,9 @@ const Sidebar = () => {
         </li>
 
         <SiteBarItem text={'Home'} link_path={'/'} icon={'bx bxs-home-circle'} />
-        <SiteBarItem text={'Dashboard'} link_path={'/technologies'} icon={'bx bx-grid-alt'} />
+        <SiteBarItem text={'Skills'} link_path={'/technologies'} icon={'bx bxs-book-open'} />
+        <SiteBarItem text={'Dashboard'} link_path={'/dashboard'} icon={'bx bx-grid-alt'} />
         <SiteBarItem text={'About'} link_path={'/about'} icon={'bx bx-user'} />
-        <SiteBarItem text={'Tutorial'} link_path={'/tutorial'} icon={'bx bxs-book-open'} />
     
         <li className="profile">
           <div className="profile-details">

@@ -1,11 +1,29 @@
-import React from 'react';
-import './Dashboard.css'; 
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
 
+.message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+}
 
-export default function Dashboard() {
-  return (
-    <div>
-      <h1>Dashboard</h1>
-    </div>
-  );
+.download-text {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: inherit; /* No color, inherit from the parent */
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff; /* Blue color for the link */
+  text-decoration: none; /* No underline */
+  font-weight: bold;
+}
+
+.download-link:hover {
+  text-decoration: underline; /* Underline the link on hover */
 }

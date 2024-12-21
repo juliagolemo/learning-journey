@@ -14,6 +14,8 @@ import Git from "./pages/skill_pages/Git";
 import GoLang from "./pages/skill_pages/GoLang";
 import German from "./pages/skill_pages/German";
 import WebDevelopment from "./pages/skill_pages/WebDevelopment";
+import Dashboard from "./pages/Dashboard";
+
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
           {/* Dynamic route for markdown files */}
           <Route path="/classes/:markdownName" element={<MarkdownPage />} />
           <Route path="/technologies" element={<Technologies />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           
           <Route path="/technologies/excel" element={<Excel />} />
           <Route path="/technologies/azure" element={<Azure />} />

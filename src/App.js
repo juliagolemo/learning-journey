@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "./components/SiteBar";
+import Sidebar from "./components/SideBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import HomeRedirect from "./hooks/HomeRedirect";

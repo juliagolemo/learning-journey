@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'boxicons/css/boxicons.min.css'; // Import Box Icons CSS
-import './SiteBar.css';
+import './SideBar.css';
 import { Link } from 'react-router-dom';
 
 

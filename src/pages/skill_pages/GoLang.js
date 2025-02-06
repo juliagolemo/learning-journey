@@ -9,6 +9,7 @@ const cards_list = [
   { id: 'golang_func', title: ' Functions', date: '2024-10-01', image: `${golang_images_path}golangheader.png` },
   { id: 'golang_loops', title: ' Loops ', date: '2024-10-01', image: `${golang_images_path}golang-structs.webp` },
   { id: 'golang_conditions', title: ' Conditions ', date: '2024-10-01', image: `${golang_images_path}golang-pic.png` },
+  { id: 'strings', title: ' Strings - Python ', date: '2024-10-01', image: `${golang_images_path}golang-pic.png` },
 ];
 
 export default function GoLang() {

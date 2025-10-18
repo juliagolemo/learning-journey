@@ -5,10 +5,28 @@ import 'react-vertical-timeline-component/style.min.css';
 function MyTimeline() {
   return (
     <VerticalTimeline lineColor="#FF6347">
+      {/* Armatis - German Sales Agent */}
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="Jan 2025 - Present"
+        iconStyle={{ background: 'rgba(255, 255, 255, 1)', color: '#fff' }}
+        icon={
+          <img
+            src={'/images/timeline/armatis1.png'}
+            alt="Armatis"
+            style={{ width: '100%', height: '100%', borderRadius: '50%' }}
+          />
+        }
+      >
+        <h3 className="vertical-timeline-element-title">German Sales Agent</h3>
+        <h4 className="vertical-timeline-element-subtitle">Armatis · Part-time</h4>
+        <p>Kraków, Lesser Poland, Poland · Hybrid</p>
+      </VerticalTimelineElement>
+
       {/* Career Break */}
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="Oct 2024 - Present"
+        date="Oct 2024 - Dec 2024"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         icon={
           <img

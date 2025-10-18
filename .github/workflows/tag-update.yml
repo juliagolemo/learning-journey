@@ -1,7 +1,10 @@
 name: Tag and Build Docker Image on Merge to Main
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Build and Test"]   # dokładnie taka sama nazwa jak w polu `name:` workflowa, który ma się zakończyć
+    types:
+      - completed
     branches:
       - main
 
@@ -11,6 +14,7 @@ permissions:
 
 jobs:
   tagging_and_docker:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

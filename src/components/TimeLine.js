@@ -5,6 +5,24 @@ import 'react-vertical-timeline-component/style.min.css';
 function MyTimeline() {
   return (
     <VerticalTimeline lineColor="#FF6347">
+      {/* TTEC - Business Development Representative */}
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="May 2026 - Present"
+        iconStyle={{ background: 'rgba(255, 255, 255, 1)', color: '#fff' }}
+        icon={
+          <img
+            src={'/images/timeline/ttec_logo.jpg'}
+            alt="TTEC"
+            style={{ width: '100%', height: '100%', borderRadius: '50%' }}
+          />
+        }
+      >
+        <h3 className="vertical-timeline-element-title">Business Development Representative | Google Cloud Platform</h3>
+        <h4 className="vertical-timeline-element-subtitle">TTEC on behalf of Google · Full-time</h4>
+        <p>Cracow, Małopolskie, Poland</p>
+      </VerticalTimelineElement>
+
       {/* Armatis - German Sales Agent */}
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
